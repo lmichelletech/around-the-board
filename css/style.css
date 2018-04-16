@@ -1,0 +1,132 @@
+bode{margin: 0; padding: 0;}
+
+.board{
+    border: 8px solid black;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    min-width: 80vw;
+    min-height: 80vh;
+}
+
+.row{
+    position: absolute;
+    display: flex;
+    border: 1px solid black;
+}
+
+.south{
+    flex-direction: row-reverse;
+    min-width: 67vw;
+    min-height: 22vh;
+    bottom:0;
+    right: 0;
+    background-color: palegoldenrod;
+}
+
+.north{
+    flex-direction: row;
+    min-width: 67vw;
+    min-height: 22vh;
+    top:0;
+    left: 0;
+    background-color: palegoldenrod;
+}
+
+.north .spot{
+    border: 1px solid blue;
+    border-top: 0;
+    flex: 1;
+}
+
+.north .end{
+    flex: 1.45;
+}
+
+.west{
+    flex-direction: column-reverse;
+    min-width: 13vw;
+    min-height: 57.5vh;
+    left:0;
+    bottom: 0;
+    background-color: pink;
+}
+
+.west .spot{
+    flex: 1;
+    border: 1px solid purple;
+    border-left: 0;
+}
+
+.west .end{
+    flex: 1.88;
+}
+
+.east{
+    flex-direction: column;
+    min-width: 13vw;
+    min-height: 57.5vh;
+    top:0;
+    right: 0;
+    background-color: rgb(192, 221, 255);
+}
+
+.east .spot{
+    flex: 1;
+    border: 1px solid purple;
+    border-right: 0;
+}
+
+.east .end{
+    flex: 1.88;
+}
+
+.spot{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.south .spot{
+    border: 1px solid blue;
+    border-bottom: 0;
+    flex: 1;
+}
+
+.south .end{
+    flex: 1.45;
+}
+
+.die{
+    position: absolute;
+    top: 35vh;
+    left: 43vw;
+    min-width: 13vw;
+    max-width: 16vw;
+}
+
+.die img{
+    width: 80%;
+}
+
+.roll{
+    position: absolute;
+    font-size: 40px;
+    font-size: 14px;
+    z-index: 10;
+    top: 26vh;
+    left: 10vw;
+}
+
+.player{
+    min-width:25px;
+    min-height: 25px;
+    margin: 10px auto;
+}
+
+.player img{
+    min-width:25px;
+    max-width: 45px;
+    min-height: 25px;
+    max-height: 45px;
+}
